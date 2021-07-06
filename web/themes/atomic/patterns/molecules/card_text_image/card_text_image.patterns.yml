@@ -1,0 +1,39 @@
+card_text_image:
+  label: 'Card: Text - Image'
+  description: A card with an image, text, summary and link.
+  variants:
+    default:
+      label: Default
+      description: 'Default Card: Text - Image, with image on the right hand side.'
+    reversed:
+      label: Reverse layout
+      description: 'Reversed Card: Text - Image, with image on the left hand side.'
+  fields:
+    title:
+      type: text
+      label: Title
+      description: Card title.
+      preview: 'We plant trees around the globe with your help'
+    image_url:
+      type: text
+      label: Image URL
+      description: The absolute URL of the image.
+      preview: 'https://picsum.photos/580/428'
+    link_text:
+      type: text
+      label: Link text
+      description: The CTA link text.
+      preview: 'Get involved'
+    link_uri:
+      type: uri
+      label: Link URI
+      description: The CTA link URI.
+      preview: 'https://example.com'
+
+
+  libraries:
+    -
+      card_text_image:
+        css:
+          component:
+            css/card_text_image.css: {}
