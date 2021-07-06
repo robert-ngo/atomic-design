@@ -15,6 +15,7 @@
     ],
     "require": {
         "drupal/admin_toolbar": "^3.0",
+        "drupal/devel": "^4.1",
         "drupal/paragraphs": "^1.12",
         "drupal/ui_patterns": "^1.2",
         "drush/drush": "^10",
@@ -59,5 +60,8 @@
         "platform": {
             "php": "7.4"
         }
+    },
+    "require-dev": {
+        "kint-php/kint": "^3.3"
     }
 }
