@@ -1,0 +1,22 @@
+uuid: d183d8eb-44ce-4791-a59a-0f7537d10c41
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - atomic
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: atomic_help
+theme: atomic
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

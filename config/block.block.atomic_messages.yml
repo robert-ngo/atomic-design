@@ -1,0 +1,22 @@
+uuid: 796f4024-921c-4512-af63-65e4358f9454
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - atomic
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: atomic_messages
+theme: atomic
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

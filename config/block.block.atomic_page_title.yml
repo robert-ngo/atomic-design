@@ -1,0 +1,20 @@
+uuid: b10b03f7-8751-43ce-9d86-faebc99e2867
+langcode: en
+status: true
+dependencies:
+  theme:
+    - atomic
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: atomic_page_title
+theme: atomic
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

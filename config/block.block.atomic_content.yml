@@ -1,0 +1,22 @@
+uuid: f18df8f8-4203-4025-83c8-5179f8f1f6a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - atomic
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: atomic_content
+theme: atomic
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
