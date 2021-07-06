@@ -1,0 +1,21 @@
+{%
+    set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+]
+%}
+
+{% set display = paragraph.field_settings_reversed.value == '1' ? 'reversed' :  'default' %}
+
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }}>
+        {{ pattern('card_text_image', {
+            title: paragraph.field_title.value,
+            image_url: 'https://picsum.photos/580/428',
+            link_text: paragraph.field_link.value[0]['title'],
+            link_uri: paragraph.field_link.0.getUrl().toString()
+        }, display) }}
+    </div>
+{% endblock paragraph %}

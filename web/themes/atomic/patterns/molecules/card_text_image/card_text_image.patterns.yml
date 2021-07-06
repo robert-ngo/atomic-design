@@ -30,7 +30,6 @@ card_text_image:
       description: The CTA link URI.
       preview: 'https://example.com'
 
-
   libraries:
     -
       card_text_image:
