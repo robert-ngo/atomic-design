@@ -1,0 +1,27 @@
+{#
+/**
+ * See https://getbootstrap.com/docs/4.0/components/buttons/
+ * for more details about buttons in Bootstrap
+ *
+ * See https://www.drupal.org/docs/8/theming-drupal-8/using-attributes-in-templates
+ * for more details about attributes
+*/
+#}
+
+{% set classes = [
+    'btn',
+    variant == 'link' ? 'btn-link' : 'btn-primary',
+] %}
+
+{% set attributes = create_attribute()
+    .addClass(classes)
+    .setAttribute('href', url)
+%}
+
+<a {{ attributes }}>
+    {{ title }}
+
+    {% if variant == 'link' %}
+        <i class="fas fa-arrow-right"></i>
+    {% endif %}
+</a>

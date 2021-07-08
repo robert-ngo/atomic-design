@@ -1,0 +1,25 @@
+button:
+  label: 'Button'
+  description: Button component
+  variants:
+    default:
+      label: Default
+      description: 'Default style'
+      variant: primary
+    primary:
+      label: Primary
+      description: 'Primary button style'
+    link:
+      label: Link
+      description: 'Link style button'
+  fields:
+    title:
+      type: text
+      label: Title
+      description: Card title.
+      preview: 'Get involved'
+    url:
+      type: url
+      label: URL
+      description: The URL of the button
+      preview: '#'
