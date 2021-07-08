@@ -15,7 +15,10 @@
             <div class="mb-3">{{ text }}</div>
         {% endif %}
 
-        <a href="{{ link_uri }}" class="btn btn-primary">{{ link_text }}</a>
+        {{ pattern('button', {
+            title: link_text,
+            url: link_uri
+        }, 'primary') }}
     </div>
     <div class="col-md-6">
         <img src="{{ image_url }}" class="img-fluid" />
