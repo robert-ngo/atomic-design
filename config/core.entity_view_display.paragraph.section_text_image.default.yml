@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.section_text_image.field_image
     - field.field.paragraph.section_text_image.field_link
+    - field.field.paragraph.section_text_image.field_settings_reversed
     - field.field.paragraph.section_text_image.field_text
     - field.field.paragraph.section_text_image.field_title
     - paragraphs.paragraphs_type.section_text_image
@@ -36,6 +37,16 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
+  field_settings_reversed:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_text:
     weight: 1

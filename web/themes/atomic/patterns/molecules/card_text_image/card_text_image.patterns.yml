@@ -19,6 +19,11 @@ card_text_image:
       label: Image URL
       description: The absolute URL of the image.
       preview: 'https://picsum.photos/580/428'
+    text:
+      type: text
+      label: Text
+      description: The body text of the component
+      preview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     link_text:
       type: text
       label: Link text

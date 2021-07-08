@@ -1,0 +1,23 @@
+uuid: 94b13981-db1a-4d23-a429-a76b37d53cbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_settings_reversed
+    - paragraphs.paragraphs_type.section_text_image
+id: paragraph.section_text_image.field_settings_reversed
+field_name: field_settings_reversed
+entity_type: paragraph
+bundle: section_text_image
+label: Reversed
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
