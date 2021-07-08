@@ -1,0 +1,25 @@
+{%
+    set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'row',
+    'py-5',
+    'text-center'
+]
+%}
+
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }}>
+        {% for card in paragraph.field_cards %}
+            {% set card_info = card.entity %}
+            <div class="col-lg-4">
+                {{ pattern('card_info', {
+                    title: card_info.field_title.value,
+                    text: card_info.field_text.value
+                }) }}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock paragraph %}
