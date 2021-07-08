@@ -7,14 +7,12 @@
 ] %}
 
 {% set innerClasses = [
-    'col-md-8',
-    variant == 'center' ? 'justify-content-center',
-    variant == 'right' ? 'justify-content-end'
+    'col-md-8'
 ] %}
 
 <div{{ attributes.addClass(classes) }}>
     <div{{ create_attribute().addClass(innerClasses) }}>
-        <h1>{{ title }}</h1>
+        <h2>{{ title }}</h2>
 
         <div class="mb-3">{{ text }}</div>
 
