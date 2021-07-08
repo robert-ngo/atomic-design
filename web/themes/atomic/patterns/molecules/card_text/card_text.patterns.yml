@@ -1,0 +1,38 @@
+card_text:
+  label: 'Card: Text'
+  description: A card with title, text and link.
+  variants:
+    default:
+      label: Default
+      description: 'Default Card: Text, with title, text and link'
+      variant: left
+    left:
+      label: Align left
+      description: 'All elements align to the left'
+    center:
+      label: Align center
+      description: 'All elements align to the center'
+    right:
+      label: Align right
+      description: 'All elements align to the right'
+  fields:
+    title:
+      type: text
+      label: Title
+      description: Card title.
+      preview: 'Reforestation benefits all of us'
+    text:
+      type: text
+      label: Text
+      description: The body text of the component
+      preview: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+    link_text:
+      type: text
+      label: Link text
+      description: The CTA link text.
+      preview: 'Learn more'
+    link_uri:
+      type: uri
+      label: Link URI
+      description: The CTA link URI.
+      preview: 'https://example.com'

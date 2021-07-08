@@ -1,0 +1,28 @@
+{% set classes = [
+    'card-text',
+    'row',
+    variant == 'center' ? 'justify-content-center text-center',
+    variant == 'right' ? 'justify-content-end text-right',
+    'py-5'
+] %}
+
+{% set innerClasses = [
+    'col-md-8',
+    variant == 'center' ? 'justify-content-center',
+    variant == 'right' ? 'justify-content-end'
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+    <div{{ create_attribute().addClass(innerClasses) }}>
+        <h1>{{ title }}</h1>
+
+        <div class="mb-3">{{ text }}</div>
+
+        {% if link_text and link_uri %}
+            {{ pattern('button', {
+                title: link_text,
+                url: link_uri
+            }, 'link') }}
+        {% endif %}
+    </div>
+</div>
