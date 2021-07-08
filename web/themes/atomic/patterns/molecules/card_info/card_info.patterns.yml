@@ -1,0 +1,18 @@
+card_info:
+  label: 'Card: Info'
+  description: A card with title, text.
+  variants:
+    default:
+      label: Default
+      description: 'Default Card: Text, with title, text and link'
+  fields:
+    title:
+      type: text
+      label: Title
+      description: Card title.
+      preview: 'Lorem ipsum'
+    text:
+      type: text
+      label: Text
+      description: The body text of the component
+      preview: 'Pellentesque non convallis nisl. Pellentesque a vehicula enim. Morbi metus dolor, iaculis sit amet lorem ac, iaculis condimentum purus.'

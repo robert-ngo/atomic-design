@@ -1,0 +1,13 @@
+{% set classes = [
+    'card-info',
+    'p-3',
+    'border',
+    'shadow',
+    'bg-white',
+    'rounded'
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+    <h3>{{ title }}</h3>
+    <div class="mb-3">{{ text }}</div>
+</div>
