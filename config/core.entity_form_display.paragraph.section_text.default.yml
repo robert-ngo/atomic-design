@@ -1,0 +1,96 @@
+uuid: 57cf80a3-7b28-4107-a2bf-9e7f87acf6ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_text.field_link
+    - field.field.paragraph.section_text.field_settings_align
+    - field.field.paragraph.section_text.field_text
+    - field.field.paragraph.section_text.field_title
+    - paragraphs.paragraphs_type.section_text
+  module:
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_content
+        - group_settings
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_content:
+      children:
+        - field_title
+        - field_text
+        - field_link
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Content
+    group_settings:
+      children:
+        - field_settings_align
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Settings
+id: paragraph.section_text.default
+targetEntityType: paragraph
+bundle: section_text
+mode: default
+content:
+  field_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_settings_align:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_text:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
