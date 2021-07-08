@@ -1,0 +1,19 @@
+uuid: 5084b88a-6fe8-461c-8bdc-6450673b14df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - paragraphs.paragraphs_type.card_info
+id: paragraph.card_info.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: card_info
+label: Text
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

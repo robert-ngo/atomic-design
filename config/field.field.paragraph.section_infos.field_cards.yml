@@ -1,18 +1,18 @@
-uuid: f2a95c6b-50bc-444a-91ce-7690eee45087
+uuid: bfb900a9-2a94-400c-bd4f-397beec44953
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_contents
-    - node.type.page
+    - field.storage.paragraph.field_cards
     - paragraphs.paragraphs_type.card_info
+    - paragraphs.paragraphs_type.section_infos
   module:
     - entity_reference_revisions
-id: node.page.field_contents
-field_name: field_contents
-entity_type: node
-bundle: page
-label: Contents
+id: paragraph.section_infos.field_cards
+field_name: field_cards
+entity_type: paragraph
+bundle: section_infos
+label: Cards
 description: ''
 required: false
 translatable: false
@@ -21,20 +21,20 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 1
+    negate: 0
     target_bundles:
       card_info: card_info
     target_bundles_drag_drop:
       card_info:
         enabled: true
-        weight: -6
+        weight: 5
       section_infos:
-        weight: -9
+        weight: 6
         enabled: false
       section_text:
-        weight: -8
+        weight: 7
         enabled: false
       section_text_image:
-        weight: -7
+        weight: 8
         enabled: false
 field_type: entity_reference_revisions

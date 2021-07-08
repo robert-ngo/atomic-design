@@ -1,0 +1,24 @@
+uuid: 7893c7a9-3eb9-4be0-b5e7-73e6a5c35b22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_infos.field_cards
+    - paragraphs.paragraphs_type.section_infos
+  module:
+    - entity_reference_revisions
+id: paragraph.section_infos.default
+targetEntityType: paragraph
+bundle: section_infos
+mode: default
+content:
+  field_cards:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

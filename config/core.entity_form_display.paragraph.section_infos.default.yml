@@ -1,0 +1,29 @@
+uuid: 23375821-227f-4dc0-b4f4-65c4ea08c4fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section_infos.field_cards
+    - paragraphs.paragraphs_type.section_infos
+  module:
+    - paragraphs
+id: paragraph.section_infos.default
+targetEntityType: paragraph
+bundle: section_infos
+mode: default
+content:
+  field_cards:
+    type: entity_reference_paragraphs
+    weight: 0
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: card_info
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true

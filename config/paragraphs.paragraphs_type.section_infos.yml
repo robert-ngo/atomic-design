@@ -1,0 +1,10 @@
+uuid: cdfefa81-4eac-4bae-bafa-b2d72808ac78
+langcode: en
+status: true
+dependencies: {  }
+id: section_infos
+label: 'Section: Infos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

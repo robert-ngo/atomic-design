@@ -1,0 +1,32 @@
+uuid: b2bf4d37-bbe7-4bff-b6da-11bc24108b95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_info.field_text
+    - field.field.paragraph.card_info.field_title
+    - paragraphs.paragraphs_type.card_info
+id: paragraph.card_info.default
+targetEntityType: paragraph
+bundle: card_info
+mode: default
+content:
+  field_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
